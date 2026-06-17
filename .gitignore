@@ -1,0 +1,50 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+out/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE folders/files
+.vs/
+.vscode/
+.idea/
+
+# Rider
+*.sln.iml
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+
+# ASP.NET / Blazor generated
+wwwroot/_framework/
+wwwroot/_content/
+
+# Publish output
+publish/
+
+# Test results
+TestResults/
+*.trx
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# DotNet local tools/cache
+.dotnet/
+
+# JetBrains
+_ReSharper*/
+*.DotSettings.user
