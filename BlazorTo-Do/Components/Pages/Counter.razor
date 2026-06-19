@@ -12,9 +12,14 @@
 <input type="text" @oninput="InputChanged" />
 <p>@message</p>
 
+<input @bind="text" />
+<button @onclick='() => text = ""'>Clear</button>
+<p>@text</p>
+
 @code {
     private int currentCount = 0;
     String message = "";
+    string text = "";
 
     private void IncrementCount()
     {
