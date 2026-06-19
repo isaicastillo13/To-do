@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorTo-Do")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac414925b12205c58975103ab925d9f341f8a6a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c1f4fb6c19ae095467e63cc3668e5839a6f7288")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorTo-Do")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorTo-Do")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

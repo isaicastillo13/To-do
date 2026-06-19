@@ -9,11 +9,20 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<input type="text" @onchange="InputChanged" />
+<p>@message</p>
+
 @code {
     private int currentCount = 0;
+    String message = "";
 
     private void IncrementCount()
     {
         currentCount++;
+    }
+
+    void InputChanged (ChangeEventArgs e)
+    {
+        message = (string)e.Value;
     }
 }
