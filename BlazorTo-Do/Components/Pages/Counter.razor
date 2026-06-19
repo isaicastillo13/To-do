@@ -9,7 +9,7 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-<input type="text" @onchange="InputChanged" />
+<input type="text" @oninput="InputChanged" />
 <p>@message</p>
 
 @code {
@@ -23,6 +23,6 @@
 
     void InputChanged (ChangeEventArgs e)
     {
-        message = (string)e.Value;
+        message = e.Value?.ToString() ?? ""; 
     }
 }
