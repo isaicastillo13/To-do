@@ -12,7 +12,7 @@
         </li>
     }
 </ul>
-<input @bind="newTodo" />
+<input @bind="newTodo" @onkeydown="HandleKeyDown"/>
 <button @onclick="addItems">Add</button>
 
 @code {
@@ -26,4 +26,13 @@ void addItems(){
         newTodo = "";
     }
 }
+
+private void HandleKeyDown(KeyboardEventArgs e)
+{
+    if (e.Key == "Enter")
+    {
+        addItems();
+    }
+}
+
 }
