@@ -1,7 +1,7 @@
 @page "/Todo"
 @rendermode InteractiveServer
 
-<PageTitle>Todo</PageTitle>
+<PageTitle>To-do</PageTitle>
 <h3>Todo (@todos.Count(todo => !todo.IsDone ))</h3>
 
 <ul>
@@ -17,13 +17,23 @@
 <button @onclick="addItems">Add</button>
 
 @code {
+
+@* lista llamada todos de tipo TodoItem *@
 private List<TodoItem> todos = new();
 private string newTodo = "";
 
 void addItems(){
     if (!string.IsNullOrWhiteSpace(newTodo))
     {
-        todos.Add(new TodoItem { Title = newTodo, IsDone = false });
+        @* agrega a la lista el objeto *@
+        todos.Add(
+            @* crea un objeto de la clase TodItems *@
+            new TodoItem 
+            { 
+                Title = newTodo, 
+                IsDone = false
+            });
+
         newTodo = "";
     }
 }
